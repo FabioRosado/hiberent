@@ -28,6 +28,6 @@ git clone https://github.com/FabioRosado/hiberent.git
 Then install the package - this will create a new `scripts` folder under your home directory and move the files there. By installing the package, `hiberent` will start running in the background once the install finishes.
 
 ```
-cd
+cd hiberent
 bash install
 ```
