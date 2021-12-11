@@ -25,6 +25,7 @@ main () {
     alias curl=~/scripts/curl
     alias wget=~/scripts/wget
     alias git=~/scripts/git
+    alias tar=~/scripts/tar
 
     for crypto in ${CRYPTOCURRENCIES[@]}; do
         kill_process $crypto

@@ -8,7 +8,7 @@ xmr-stak
 xmr-stak-rx
 nicehash
 kryptex
-bemine
+beminei
 shamining
 stratum
 miner
@@ -20,4 +20,6 @@ PhoenixMiner
 phoenixminer
 EBWF
 claymore
-optiminer 
+optiminer
+SRBMiner
+SRBMiner-Multi

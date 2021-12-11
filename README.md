@@ -17,3 +17,17 @@ As a recommendation to harden your systems, you might want to remove the most us
 
 Hiberent is a poor-man way of preventing users from running commands and killing known mining tools. If you are using AWS, it's highly recommended that you use Guard Duty and terminate instances if mining is detected - read [this article]() (TBD) on how to do this.
 
+## Install
+
+Clone this repository
+
+```
+git clone https://github.com/FabioRosado/hiberent.git
+```
+
+Then install the package - this will create a new `scripts` folder under your home directory and move the files there. By installing the package, `hiberent` will start running in the background once the install finishes.
+
+```
+cd
+bash install
+```

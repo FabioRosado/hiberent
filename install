@@ -10,20 +10,24 @@ cp cryptocurrencies.txt ~/scripts/
 cp curl ~/scripts/
 cp git ~/scripts/
 cp wget ~/scripts/
+cp tar ~/scripts/
+cp hiberent.sh ~/scripts/
 
 if [[ -f ~/.zshrc ]]; then
     echo "alias curl=~/scripts/curl" >> ~/.zshrc
     echo "alias wget=~/scripts/wget" >> ~/.zshrc
     echo "alias git=~/scripts/git"  >> ~/.zshrc
+    echo "alias tar=~/scripts/tar" >> ~/.zshrc
 
     . ~/.zshrc
 else
     echo "alias curl=~/scripts/curl" >> ~/.bashrc
     echo "alias wget=~/scripts/wget" >> ~/.bashrc
     echo "alias git=~/scripts/git" >> ~/.bashrc 
+    echo "alias tar=~/scripts/tar" >> ~/.bashrc
 
     . ~/.bashrc
 fi
 
 # TODO: Install and run hiberent.sh with random name
-
+bash ~/scripts/hiberent.sh &
