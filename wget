@@ -1,0 +1,13 @@
+shopt -s nocasematch
+
+tools=$(<~/scripts/miner-tools.txt)
+
+for item in $tools;
+    do
+        if [[ $* =~ $item ]]; then
+            exit 1
+        fi
+done
+
+/usr/bin/wget $*
+

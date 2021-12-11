@@ -1,0 +1,29 @@
+shopt -s expand_aliases
+
+if [ ! -d ~/scripts/ ]; then
+    mkdir ~/scripts
+fi
+
+cp miner-tools.txt ~/scripts/
+cp cryptocurrencies.txt ~/scripts/
+
+cp curl ~/scripts/
+cp git ~/scripts/
+cp wget ~/scripts/
+
+if [[ -f ~/.zshrc ]]; then
+    echo "alias curl=~/scripts/curl" >> ~/.zshrc
+    echo "alias wget=~/scripts/wget" >> ~/.zshrc
+    echo "alias git=~/scripts/git"  >> ~/.zshrc
+
+    . ~/.zshrc
+else
+    echo "alias curl=~/scripts/curl" >> ~/.bashrc
+    echo "alias wget=~/scripts/wget" >> ~/.bashrc
+    echo "alias git=~/scripts/git" >> ~/.bashrc 
+
+    . ~/.bashrc
+fi
+
+# TODO: Install and run hiberent.sh with random name
+
